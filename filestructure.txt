@@ -1,0 +1,56 @@
+mflip-adventures/
+│
+├── index.php                     # Homepage
+├── about.php                     # About page
+├── tours.php                     # Tours listing page
+├── tour-details.php              # Individual tour page
+├── contact.php                   # Contact page
+├── booking.php                   # Booking form
+├── admin/                        # Admin section
+│   ├── index.php                 # Admin dashboard
+│   ├── login.php                 # Admin login
+│   ├── tours/                    # Tour management
+│   │   ├── index.php             # List tours
+│   │   ├── add.php               # Add new tour
+│   │   └── edit.php              # Edit tour
+│   ├── bookings/                 # Booking management
+│   │   ├── index.php             # List bookings
+│   │   └── view.php              # View single booking
+│   └── logout.php                # Admin logout
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css             # Main stylesheet
+│   │   ├── colors.css            # Color theme variables
+│   │   └── responsive.css        # Responsive styles
+│   ├── js/
+│   │   ├── main.js               # Main JavaScript
+│   │   ├── booking.js            # Booking form logic
+│   │   ├── gallery.js            # Image gallery
+│   │   └── admin.js              # Admin panel scripts
+│   ├── images/
+│   │   ├── logo/                 # Company logo variations
+│   │   ├── tours/                # Tour images
+│   │   ├── gallery/              # General gallery
+│   │   └── backgrounds/          # Background images
+│   └── fonts/                    # Custom fonts if needed
+│
+├── includes/
+│   ├── header.php                # Header template
+│   ├── footer.php                # Footer template
+│   ├── database.php              # Database connection
+│   ├── functions.php             # Common functions
+│   ├── config.php                # Configuration settings
+│   └── email-template.php        # Email templates
+│
+├── uploads/                      # User uploaded files
+│   ├── tour-images/              # Tour pictures
+│   └── gallery/                  # Gallery images
+│
+├── api/                          # API endpoints if needed
+│   ├── tours.php                 # Tours API
+│   └── booking.php               # Booking API
+│
+└── sql/
+    ├── database.sql              # Database schema
+    └── sample-data.sql           # Sample data for testing
