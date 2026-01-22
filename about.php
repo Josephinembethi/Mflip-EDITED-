@@ -73,7 +73,7 @@ $pageTitle = "About Us - " . $companyInfo['name'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($pageTitle); ?></title>
-    <link rel="stylesheet" href="-\assets\assets\css\about.css">
+    <link rel="stylesheet" href="\Mflip-EDITED-\assets\assets\css\about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -187,13 +187,19 @@ $pageTitle = "About Us - " . $companyInfo['name'];
                             <p>Our team of expert guides and staff in Nairobi</p>
                         </div>
                     </div>
-                    <div class="stats-box">
-                        <?php foreach($companyStats as $stat): ?>
-                        <div class="stat-item">
-                            <span class="stat-number" data-count="<?php echo $stat['value']; ?>">0</span>
-                            <span class="stat-label"><?php echo htmlspecialchars($stat['label']); ?></span>
-                        </div>
-                        <?php endforeach; ?>
+                  <div class="stats-box">
+    <?php foreach ($companyStats as $stat): ?>
+        <div class="stat-item">
+            <span class="stat-number">
+                <?php echo htmlspecialchars($stat['value']); ?>
+            </span>
+            <span class="stat-label">
+                <?php echo htmlspecialchars($stat['label']); ?>
+            </span>
+        </div>
+    <?php endforeach; ?>
+</div>
+
                     </div>
                 </div>
             </div>
@@ -213,17 +219,15 @@ $pageTitle = "About Us - " . $companyInfo['name'];
                     
                     <div class="nairobi-features">
                         <div class="feature">
-                            <i class="fas fa-paw"></i>
+ <!--                           <img src="assets/assets/1674110151_39_wildlife-3233525_1280.jpg" alt="">-->
                             <h4>Nairobi National Park</h4>
                             <p>Just 7km from the city center, experience wildlife against a city skyline backdrop.</p>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-plane"></i>
                             <h4>Transport Hub</h4>
                             <p>Jomo Kenyatta International Airport connects us to all major safari destinations.</p>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-users"></i>
                             <h4>Cultural Melting Pot</h4>
                             <p>Nairobi's diverse communities offer rich cultural experiences alongside wildlife adventures.</p>
                         </div>
@@ -299,8 +303,7 @@ $pageTitle = "About Us - " . $companyInfo['name'];
         </div>
     </section>
 
-    <!-- Footer -->
-    <?php include 'includes/footer.php'; ?>
+ 
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/about.js"></script>

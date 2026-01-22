@@ -1,10 +1,78 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #85cea5;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;              
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #2e8b57; 
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #222;
+}
+/*mobile responsiveness*/
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #15e45a;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none; 
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        padding: 15px 0;
+    }
+}
+
 
 /* About Hero Section */
 .about-hero {
     height: 60vh;
     min-height: 500px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('../images/about/about-hero.jpg') no-repeat center center;
+                url('assets/assets/mombasa beach.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -233,7 +301,13 @@
     margin-bottom: 30px;
     color: var(--gray-dark);
 }
-
+.feature-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
 .nairobi-features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
